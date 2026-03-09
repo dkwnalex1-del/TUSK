@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUSK.CompassPage"
+             Title="CompassPage">
+    <VerticalStackLayout Padding="30" Spacing="20" BackgroundColor="#E0E0E0">
+        <Label 
+            Text="COMPASS"
+            FontSize="32"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="#000000"/>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <!-- Rotating dial -->
+            <Image x:Name="DialImage" Source="compass_dial.png" WidthRequest="400" HeightRequest="400"/>
+            <!-- Static needle -->
+            <Image Source="compass_needle.png" WidthRequest="400" HeightRequest="400"/>
+        </Grid>
+        <Label x:Name="DirectionLabel" FontSize="24" TextColor="#000000" HorizontalTextAlignment="Center"/>
+        <Label x:Name="HeadingLabel" FontSize="24" TextColor="#000000" HorizontalTextAlignment="Center"/>
+
+        </VerticalStackLayout>
+</ContentPage>
