@@ -3,19 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.CompassPage"
              Title="CompassPage">
-    <VerticalStackLayout Padding="30" Spacing="20" BackgroundColor="#E0E0E0">
+    <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
         <Label 
             Text="COMPASS"
-            FontSize="32"
+            FontSize="24"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
             TextColor="#000000"/>
-        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            MaximumWidthRequest="380"
+            MaximumHeightRequest="380">
+
             <!-- Rotating dial -->
-            <Image x:Name="DialImage" Source="compass_dial.png" WidthRequest="400" HeightRequest="400"/>
+            <Image 
+            x:Name="DialImage"
+            Source="compass_dial.png"
+            Aspect="AspectFit"/>
+
             <!-- Static needle -->
-            <Image Source="compass_needle.png" WidthRequest="400" HeightRequest="400"/>
+            <Image 
+            Source="compass_needle.png"
+            Aspect="AspectFit"/>
+
         </Grid>
         <Label x:Name="DirectionLabel" FontSize="24" TextColor="#000000" HorizontalTextAlignment="Center"/>
         <Label x:Name="HeadingLabel" FontSize="24" TextColor="#000000" HorizontalTextAlignment="Center"/>

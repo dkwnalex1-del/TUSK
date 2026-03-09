@@ -6,14 +6,34 @@
              BackgroundColor="{StaticResource AppBackground}">
 
     <ScrollView BackgroundColor="{StaticResource AppBackground}">
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Button Text="COMPASS" Clicked="OnCompassClicked" FontSize="24"/>
-            <Button Text="FOOD LIST" FontSize="24"/>
-            <Button Text="SURVIVAL GUIDE" FontSize="24"/>
+        <Grid RowDefinitions="Auto,*,*,*"
+          ColumnDefinitions="*"
+          Padding="5"
+          RowSpacing="0"
+          ColumnSpacing="20">
+            <Label 
+            Text="PREPARE"
+            FontSize="24"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Grid.Row="0" Grid.Column="0"
+            TextColor="#000000"/>
+            <ImageButton Source="compass_button.png" Grid.Row="1" Grid.Column="0"
+                         Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+                         WidthRequest="600"
+                         HeightRequest="120"/>
+            <ImageButton Source="foodlist_button.png" Grid.Row="2" Grid.Column="0" 
+             Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+             WidthRequest="600"
+             HeightRequest="120"/>
+            <ImageButton Source="survivalguide_button.png" Grid.Row="3" Grid.Column="0" 
+             Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+             WidthRequest="500"
+             HeightRequest="120"/>
+           
 
-        </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 
 </ContentPage>
