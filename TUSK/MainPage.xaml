@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.MainPage"
-             Title="MainPage"
+             Title="HomePage"
              BackgroundColor="{StaticResource AppBackground}">
 
     <ScrollView BackgroundColor="{StaticResource AppBackground}">
-        <Grid RowDefinitions="Auto,*,*,*"
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto"
           ColumnDefinitions="*"
           Padding="5"
-          RowSpacing="0"
+          RowSpacing="10"
           ColumnSpacing="20">
             <Label 
             Text="PREPARE"
@@ -29,7 +29,7 @@
              HeightRequest="120"/>
             <ImageButton Source="survivalguide_button.png" Grid.Row="3" Grid.Column="0" 
              Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
-             WidthRequest="500"
+             WidthRequest="600"
              HeightRequest="120"/>
            
 
