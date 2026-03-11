@@ -32,12 +32,11 @@ public partial class CompassPage : ContentPage
         {
             HeadingLabel.Text = $"Heading: {data.HeadingMagneticNorth:F1}°"; 
             DirectionLabel.Text = getDirection(data.HeadingMagneticNorth);
-            // Rotate the dial image, needle stays static
+            // The dial image rotates, needle will stay static
             DialImage.Rotation = -data.HeadingMagneticNorth; 
             });
         }
-    private String getDirection(double heading)
-    {
+    private String getDirection(double heading){
         if (heading >= 337.5 || heading <= 22.5) return "North";
         if (heading >= 22.5 && heading < 67.5) return "Northeast"; if (heading >= 67.5 && heading < 112.5) return "East";
         if (heading >= 112.5 && heading < 157.5) return "Southeast"; if (heading >= 157.5 && heading < 202.5) return "South";
@@ -45,4 +44,8 @@ public partial class CompassPage : ContentPage
         if (heading >= 247.5 && heading < 292.5) return "West";
         return "Northwest";
         }
-    }
+    private async void OnBackClicked(object sender, EventArgs e) { 
+        await Navigation.PopAsync(); 
+        }
+
+}

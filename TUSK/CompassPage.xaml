@@ -4,6 +4,8 @@
              x:Class="TUSK.CompassPage"
              >
     <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
+        <Button Text="Back"
+        Clicked="OnBackClicked" />
         <Label 
             Text="COMPASS"
             FontSize="24"

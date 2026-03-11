@@ -8,8 +8,17 @@
             InitializeComponent();
         }
         private async void OnCompassClicked(object sender, EventArgs e)
-        { // Shell navigation, since we are using AppShell
-          await Shell.Current.GoToAsync(nameof(CompassPage)); }
+        { //navigation to compass 
+            await Navigation.PushAsync(new CompassPage()); }
 
+        private async void OnFoodListClicked(object sender, EventArgs e)
+        { //navigation to foodlist
+            await Navigation.PushAsync(new FoodListPage());
         }
+        private async void SurvivalGuideClicked(object sender, EventArgs e)
+        { //navigation to compass 
+            await Navigation.PushAsync(new CompassPage());
+        }
+
+    }
 }
