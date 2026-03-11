@@ -62,10 +62,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CompassPage.xaml">
+	  <MauiXaml Update="Pages\CompassPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FoodListPage.xaml">
+	  <MauiXaml Update="Pages\FoodListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
