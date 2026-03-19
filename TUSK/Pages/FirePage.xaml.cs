@@ -1,15 +1,13 @@
 namespace TUSK;
 
-public partial class FoodListPage : ContentPage
+public partial class FirePage : ContentPage
 {
-	public FoodListPage()
+	public FirePage()
 	{
 		InitializeComponent();
 	}
     private async void OnBackClicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
-        
     }
-
 }

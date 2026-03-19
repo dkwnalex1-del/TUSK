@@ -28,7 +28,7 @@
              WidthRequest="600"
              HeightRequest="120"/>
             <ImageButton Source="survivalguidebutton.png" Grid.Row="3" Grid.Column="0" 
-             Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+             Aspect="AspectFit" Clicked="OnSurvivalGuideClicked" HorizontalOptions="Center"
              WidthRequest="600"
              HeightRequest="130"/>
            

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUSK.Pages.SurvivalguidePage"
+             Title="SurvivalguidePage">
+    <VerticalStackLayout>
+
+        <ImageButton Aspect="AspectFit" Source="back_button.png"
+        Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
+        HeightRequest="60"/>
+
+        <Button 
+            Text="First Aid"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Clicked="OnFirstAidClicked"/>
+        <Button 
+            Text="Shelter"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Clicked="OnShelterClicked"/>
+
+        <Button
+            Text="Water"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="OnWaterClicked"/>
+        <Button
+            Text="Fire"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Clicked="OnFireClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

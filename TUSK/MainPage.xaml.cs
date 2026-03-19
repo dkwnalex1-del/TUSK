@@ -15,9 +15,9 @@
         { //navigation to foodlist
             await Navigation.PushAsync(new FoodListPage());
         }
-        private async void SurvivalGuideClicked(object sender, EventArgs e)
+        private async void OnSurvivalGuideClicked(object sender, EventArgs e)
         { //navigation to compass 
-            await Navigation.PushAsync(new CompassPage());
+            await Navigation.PushAsync(new Pages.SurvivalguidePage());
         }
 
     }

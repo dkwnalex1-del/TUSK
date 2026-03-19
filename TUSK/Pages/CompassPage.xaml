@@ -4,8 +4,9 @@
              x:Class="TUSK.CompassPage"
              >
     <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
-        <Button Text="Back"
-        Clicked="OnBackClicked" />
+        <ImageButton Aspect="AspectFit" Source="back_button.png"
+        Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
+        HeightRequest="60"/>
         <Label 
             Text="COMPASS"
             FontSize="24"

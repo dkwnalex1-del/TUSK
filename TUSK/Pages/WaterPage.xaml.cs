@@ -1,15 +1,13 @@
 namespace TUSK;
 
-public partial class FoodListPage : ContentPage
+public partial class WaterPage : ContentPage
 {
-	public FoodListPage()
+	public WaterPage()
 	{
 		InitializeComponent();
 	}
     private async void OnBackClicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
-        
     }
-
 }
