@@ -10,4 +10,9 @@ public partial class WaterPage : ContentPage
     {
         await Navigation.PopAsync();
     }
+
+    private async void OnHomeClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }   
 }

@@ -3,15 +3,96 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.FoodListPage"
              Title="FoodListPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
+        <ImageButton 
+            Aspect="AspectFit" Source="back_button.png"
+            Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
+            HeightRequest="60"
+            BackgroundColor="Transparent"/>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="SUPPLIES CHECKLIST"
+            TextColor="Black"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <ImageButton Aspect="AspectFit" Source="back_button.png"
-        Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
-        HeightRequest="60"/>
+            HorizontalOptions="Center"
+            FontSize="30"/>
+        <Label
+            x:Name="ExpiredItemsLabel"
+            Text="Expired: None"
+            TextColor="Red"
+            FontSize="16"
+            HorizontalOptions="Start"/>
+
+        <ImageButton 
+            Aspect="AspectFit" 
+            HorizontalOptions="End"
+            Source="additem_button.png"
+            Clicked="ShowInput_Clicked"
+            WidthRequest="200"
+            HeightRequest="200"
+            BackgroundColor="Transparent"/>
         
-        
+        <VerticalStackLayout 
+            x:Name="InputSection"
+            IsVisible="False"
+            Spacing="10">
+
+            <Entry 
+                x:Name="FoodNameEntry"
+                Placeholder="Enter food name"
+                TextColor="Black"/>
+
+            <HorizontalStackLayout Spacing="10">
+                
+                <CheckBox 
+                    x:Name="HasExpiryCheckBox"
+                    CheckedChanged="HasExpiryCheckBox_CheckedChanged"/>
+                
+                <Label 
+                    Text="Add expiry date"
+                    TextColor="Black"
+                    VerticalOptions="Center"/>
+            
+            </HorizontalStackLayout>
+
+            <DatePicker x:Name="ExpiryDatePicker"
+                IsVisible="False"
+                TextColor="Black"
+                IsEnabled="True"
+                Opacity="0.5" />
+
+            <Button Text="Confirm"
+            Clicked="ConfirmAddItem_Clicked" />
+            
+        </VerticalStackLayout>
+
+        <CollectionView x:Name="ChecklistCollectionView"
+                HeightRequest="300">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,Auto" Padding="5">
+
+                        <Label Text="{Binding .}"
+                       TextColor="Black"
+                       FontSize="16"
+                       VerticalOptions="Center"/>
+
+                        <ImageButton 
+                            Source="removeitem_button.png"
+                            Grid.Column="1"
+                            Clicked="DeleteItem_Clicked"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Aspect="AspectFit"
+                            BackgroundColor="Transparent"/>
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+
+
     </VerticalStackLayout>
 </ContentPage>

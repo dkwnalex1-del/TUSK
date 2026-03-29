@@ -10,7 +10,8 @@
           ColumnDefinitions="*"
           Padding="5"
           RowSpacing="10"
-          ColumnSpacing="20">
+          ColumnSpacing="20"
+              BackgroundColor="{StaticResource AppBackground}">
             <Label 
             Text="PREPARE"
             FontSize="24"
@@ -18,20 +19,29 @@
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
             Grid.Row="0" Grid.Column="0"
-            TextColor="#000000"/>
-            <ImageButton Source="compass_button.png" Grid.Row="1" Grid.Column="0"
-                         Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
-                         WidthRequest="600"
-                         HeightRequest="120"/>
-            <ImageButton Source="foodlist_button.png" Grid.Row="2" Grid.Column="0" 
-             Aspect="AspectFit" Clicked="OnFoodListClicked" HorizontalOptions="Center"
-             WidthRequest="600"
-             HeightRequest="120"/>
-            <ImageButton Source="survivalguidebutton.png" Grid.Row="3" Grid.Column="0" 
-             Aspect="AspectFit" Clicked="OnSurvivalGuideClicked" HorizontalOptions="Center"
-             WidthRequest="600"
-             HeightRequest="130"/>
-           
+            TextColor="#000000"
+               TextDecorations="Underline"/>
+            <ImageButton 
+                Source="compass_button.png" Grid.Row="1" Grid.Column="0"
+                Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                WidthRequest="600"
+                HeightRequest="120"/>
+            <ImageButton 
+                Source="foodlist_button.png" Grid.Row="2" Grid.Column="0" 
+                Aspect="AspectFit" Clicked="OnFoodListClicked" HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                WidthRequest="600"
+                HeightRequest="120"/>
+            <ImageButton 
+                Source="survivalguidebutton.png" Grid.Row="3" Grid.Column="0" 
+                Aspect="AspectFit" Clicked="OnSurvivalGuideClicked" HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                WidthRequest="600"
+                HeightRequest="130"/>
 
         </Grid>
     </ScrollView>

@@ -16,7 +16,7 @@ public partial class SurvivalguidePage : ContentPage
     }
     private async void OnWaterClicked(object sender, EventArgs e)
     { //navigation to water page
-        await Navigation.PushAsync(new FoodListPage());
+        await Navigation.PushAsync(new WaterPage());
     }
     private async void OnFireClicked(object sender, EventArgs e)
     { //navigation to fire page
@@ -28,8 +28,4 @@ public partial class SurvivalguidePage : ContentPage
         await Navigation.PopAsync();
     }
 
-    private async void onHomeClicked(object sender, EventArgs e)
-    {
-        await Navigation.PopToRootAsync();
-    }
 }
