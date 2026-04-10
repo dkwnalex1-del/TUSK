@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.FoodListPage"
-             Title="FoodListPage">
+             NavigationPage.HasNavigationBar="False">
     <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
+       
+        <!--back buton -->
         <ImageButton 
             Aspect="AspectFit" Source="back_button.png"
             Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
@@ -15,22 +17,28 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="30"/>
-        <Label
+
+        <!-- Expired items -->
+            <Label
             x:Name="ExpiredItemsLabel"
             Text="Expired: None"
             TextColor="Red"
             FontSize="16"
             HorizontalOptions="Start"/>
 
+        <!-- add items button -->
         <ImageButton 
             Aspect="AspectFit" 
             HorizontalOptions="End"
             Source="additem_button.png"
             Clicked="ShowInput_Clicked"
-            WidthRequest="200"
-            HeightRequest="200"
+            WidthRequest="20"
+            HeightRequest="20"
+            Scale="0.7"
             BackgroundColor="Transparent"/>
         
+        
+        <!-- user input section-->
         <VerticalStackLayout 
             x:Name="InputSection"
             IsVisible="False"
@@ -54,15 +62,21 @@
             
             </HorizontalStackLayout>
 
+            <!-- shows only when users check the expiry checkbox -->
             <DatePicker x:Name="ExpiryDatePicker"
                 IsVisible="False"
                 TextColor="Black"
                 IsEnabled="True"
                 Opacity="0.5" />
 
-            <Button Text="Confirm"
-            Clicked="ConfirmAddItem_Clicked" />
-            
+            <Button Text="✔ Confirm"
+                Clicked="ConfirmAddItem_Clicked" 
+                BackgroundColor="{StaticResource AppBackground}"
+                TextColor="Black"
+                BorderColor="Black"
+                BorderWidth="1.2"
+                CornerRadius="7"/>    
+
         </VerticalStackLayout>
 
         <CollectionView x:Name="ChecklistCollectionView"
@@ -70,19 +84,22 @@
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid ColumnDefinitions="*,Auto" Padding="5">
+                    <Grid ColumnDefinitions="Auto,Auto,10" Padding="5"
+                          HorizontalOptions="Start" >
 
                         <Label Text="{Binding .}"
-                       TextColor="Black"
-                       FontSize="16"
-                       VerticalOptions="Center"/>
-
+                            TextColor="Black"
+                            FontSize="16"
+                            VerticalOptions="Center"/>
+                        
+                        <!-- remove item image button -->
                         <ImageButton 
                             Source="removeitem_button.png"
                             Grid.Column="1"
                             Clicked="DeleteItem_Clicked"
-                            WidthRequest="200"
-                            HeightRequest="200"
+                            WidthRequest="1"
+                            HeightRequest="1"
+                            Scale="0.5"
                             Aspect="AspectFit"
                             BackgroundColor="Transparent"/>
 

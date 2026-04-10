@@ -6,6 +6,7 @@
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         private async void OnCompassClicked(object sender, EventArgs e)
         { //navigation to compass 

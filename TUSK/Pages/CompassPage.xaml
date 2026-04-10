@@ -4,9 +4,14 @@
              x:Class="TUSK.CompassPage"
              >
     <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
-        <ImageButton Aspect="AspectFit" Source="back_button.png"
-        Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
-        HeightRequest="60"/>
+
+            <ImageButton Aspect="AspectFit" Source="back_button.png"
+            Clicked="OnBackClicked" HorizontalOptions="Start" 
+            WidthRequest="80"
+            MaximumWidthRequest="120"
+            HeightRequest="60"
+            MaximumHeightRequest="85"/>
+        
         <Label 
             Text="COMPASS"
             FontSize="24"
@@ -17,8 +22,8 @@
         <Grid 
             HorizontalOptions="Center" 
             VerticalOptions="Center"
-            MaximumWidthRequest="380"
-            MaximumHeightRequest="380">
+            MaximumWidthRequest="500"
+            MaximumHeightRequest="500">
 
             <!-- Rotating dial -->
             <Image 

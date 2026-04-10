@@ -2,45 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.MainPage"
-             Title="HomePage"
-             BackgroundColor="{StaticResource AppBackground}">
+             BackgroundColor="{StaticResource AppBackground}"
+             NavigationPage.HasNavigationBar="False">
 
     <ScrollView BackgroundColor="{StaticResource AppBackground}">
         <Grid RowDefinitions="Auto,Auto,Auto,Auto"
           ColumnDefinitions="*"
-          Padding="5"
+          Padding="20"
           RowSpacing="10"
           ColumnSpacing="20"
-              BackgroundColor="{StaticResource AppBackground}">
+          BackgroundColor="{StaticResource AppBackground}">
+            
             <Label 
-            Text="PREPARE"
+            Text="PREPARE" 
+            TextColor="#000000" 
+            TextDecorations="Underline"
             FontSize="24"
+            FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
-            Grid.Row="0" Grid.Column="0"
-            TextColor="#000000"
-               TextDecorations="Underline"/>
+            Grid.Row="0" Grid.Column="0"/>
+            
+            
             <ImageButton 
                 Source="compass_button.png" Grid.Row="1" Grid.Column="0"
-                Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Center"
+                Aspect="AspectFit" Clicked="OnCompassClicked" HorizontalOptions="Fill"
                 BackgroundColor="Transparent"
-                BorderColor="Transparent"
-                WidthRequest="600"
+                BorderColor="Transparent" 
                 HeightRequest="120"/>
             <ImageButton 
                 Source="foodlist_button.png" Grid.Row="2" Grid.Column="0" 
-                Aspect="AspectFit" Clicked="OnFoodListClicked" HorizontalOptions="Center"
+                Aspect="AspectFit" Clicked="OnFoodListClicked" HorizontalOptions="Fill"
                 BackgroundColor="Transparent"
                 BorderColor="Transparent"
-                WidthRequest="600"
                 HeightRequest="120"/>
             <ImageButton 
                 Source="survivalguidebutton.png" Grid.Row="3" Grid.Column="0" 
-                Aspect="AspectFit" Clicked="OnSurvivalGuideClicked" HorizontalOptions="Center"
+                Aspect="AspectFit" Clicked="OnSurvivalGuideClicked" HorizontalOptions="Fill"
                 BackgroundColor="Transparent"
                 BorderColor="Transparent"
-                WidthRequest="600"
                 HeightRequest="130"/>
 
         </Grid>

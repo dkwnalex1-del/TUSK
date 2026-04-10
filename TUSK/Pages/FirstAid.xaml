@@ -2,24 +2,187 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUSK.FirstAid"
-             Title="FirstAid">
-    <VerticalStackLayout Padding="20" Spacing="5" BackgroundColor="#E0E0E0">
-        <ImageButton Aspect="AspectFit" Source="back_button.png"
-        Clicked="OnBackClicked" HorizontalOptions="Start" WidthRequest="100"
-        HeightRequest="60"/>
-        <Button 
-            Text="Home"  
-            Clicked="OnHomeClicked"/>
+             Title="FirstAid"
+             NavigationPage.HasNavigationBar="False">
 
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-          ColumnDefinitions="*"
-          Padding="5"
-          RowSpacing="10"
-          ColumnSpacing="20"
-          BackgroundColor="{StaticResource AppBackground}">
+<!--Wrap everything in scrollview for better visibility-->
+  <ScrollView>
 
-            <Label>Text here, buttons and images</Label>
+    <VerticalStackLayout Padding="20" Spacing="20" BackgroundColor="#E0E0E0">
+        <Grid RowDefinitions="Auto"
+              ColumnDefinitions="Auto,5,Auto">
+            <ImageButton 
+                Aspect="AspectFit" 
+                Source="back_button.png"
+                Clicked="OnBackClicked" 
+                HorizontalOptions="Start" 
+                WidthRequest="100"
+                HeightRequest="60"
+                Grid.Column="0"/>
+
+            <ImageButton 
+                Aspect="AspectFit" 
+                Source="home_button.png" 
+                HorizontalOptions="Start" 
+                MinimumWidthRequest="100"
+                HeightRequest="60"
+                Clicked="OnHomeClicked"
+                Grid.Column="2"/>
 
         </Grid>
-    </VerticalStackLayout>
+
+        <!-- header image for section-->
+            <Image Source="firstaidpageheader.png"
+               Aspect="AspectFit"
+               Scale="0.7"
+               HorizontalOptions="Center"
+               MaximumWidthRequest="240"
+               MaximumHeightRequest="160"/>
+        
+        
+
+              
+        <!-- wraps whole content section for formatting-->
+        <VerticalStackLayout Spacing="25">
+
+
+
+            <!-- start of content section1-->
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+          ColumnDefinitions="Auto,Auto,10"
+          ColumnSpacing="20"
+          BackgroundColor="{StaticResource AppBackground}"
+          HorizontalOptions="Center">
+
+                <Label Text="Cuts and Bleeding"
+               VerticalOptions="Center"
+               TextColor="Black"
+               Grid.Column="1"
+               Grid.Row="0"
+               FontSize="Medium"/>
+
+                <Image x:Name="Arrow1"
+               Source="arrow.png"
+               WidthRequest="20"
+               Grid.Column="0" />
+
+                <!-- Make both arrow and wording clickable -->
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ToggleSection1"/>
+                </Grid.GestureRecognizers>
+            </Grid>
+
+            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
+                <Label Text="• Apply pressure" TextColor="Black"/>
+                <Label Text="• Elevate wound" TextColor="Black"/>
+            </VerticalStackLayout>
+
+
+
+            <!-- start of content section2-->
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+              ColumnDefinitions="Auto,Auto,10"
+              ColumnSpacing="20"
+              BackgroundColor="{StaticResource AppBackground}"
+              HorizontalOptions="Center">
+
+                <Label Text="Cuts and Bleeding"
+               VerticalOptions="Center"
+               TextColor="Black"
+               Grid.Column="1"
+               Grid.Row="1"
+               FontSize="Medium"/>
+
+                <Image x:Name="Arrow2"
+               Source="arrow.png"
+               WidthRequest="20"
+               Grid.Column="0"
+               Grid.Row="1"/>
+
+                <!-- Make both arrow and wording clickable -->
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ToggleSection2"/>
+                </Grid.GestureRecognizers>
+            </Grid>
+
+            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
+                <Label Text="• Apply pressure" TextColor="Black"/>
+                <Label Text="• Elevate wound" TextColor="Black"/>
+            </VerticalStackLayout>
+
+
+
+            <!-- start of content section 3-->
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+              ColumnDefinitions="Auto,Auto,10"
+              ColumnSpacing="20"
+              BackgroundColor="{StaticResource AppBackground}"
+              HorizontalOptions="Center">
+
+                <Label Text="Cuts and Bleeding"
+               VerticalOptions="Center"
+               TextColor="Black"
+               Grid.Column="1"
+               Grid.Row="1"
+               FontSize="Medium"/>
+
+                <Image x:Name="Arrow3"
+               Source="arrow.png"
+               WidthRequest="20"
+               Grid.Column="0"
+               Grid.Row="1"/>
+
+                <!-- Make both arrow and wording clickable -->
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ToggleSection3"/>
+                </Grid.GestureRecognizers>
+            </Grid>
+
+            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
+                <Label Text="• Apply pressure" TextColor="Black"/>
+                <Label Text="• Elevate wound" TextColor="Black"/>
+            </VerticalStackLayout>
+
+            <!-- start of content section 4-->
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+              ColumnDefinitions="Auto,Auto,10"
+              ColumnSpacing="20"
+              BackgroundColor="{StaticResource AppBackground}"
+              HorizontalOptions="Center">
+
+                <Label Text="Cuts and Bleeding"
+               VerticalOptions="Center"
+               TextColor="Black"
+               Grid.Column="1"
+               Grid.Row="1"
+               FontSize="Medium"/>
+
+                <Image x:Name="Arrow4"
+               Source="arrow.png"
+               WidthRequest="20"
+               Grid.Column="0"
+               Grid.Row="1"/>
+
+                <!-- Make both arrow and wording clickable -->
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ToggleSection4"/>
+                </Grid.GestureRecognizers>
+            </Grid>
+
+            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
+                <Label Text="• Apply pressure" TextColor="Black"/>
+                <Label Text="• Elevate wound" TextColor="Black"/>
+            </VerticalStackLayout>
+
+
+
+            <!-- end of content section-->
+
+    <!--wrapping whole content section for spacing-->
+        </VerticalStackLayout>
+        
+    </VerticalStackLayout> 
+        
+<!-- scrollview for visibility-->
+      </ScrollView>
 </ContentPage>

@@ -5,7 +5,8 @@ public partial class SurvivalguidePage : ContentPage
 	public SurvivalguidePage()
 	{
 		InitializeComponent();
-	}
+        
+    }
     private async void OnFirstAidClicked(object sender, EventArgs e)
     { //navigation to first aid page
         await Navigation.PushAsync(new FirstAid());

@@ -7,6 +7,7 @@ public partial class CompassPage : ContentPage
     public CompassPage()
     {
         InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
 
         //check the platform of the device
         if (DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
