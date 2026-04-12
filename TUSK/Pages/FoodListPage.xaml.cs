@@ -98,8 +98,8 @@ public partial class FoodListPage : ContentPage
                 Description = $"{food} expires today!",
                 Schedule = new NotificationRequestSchedule
                 {
-                    //NotifyTime = ExpiryDatePicker.Date
-                    NotifyTime = DateTime.Now.AddSeconds(10) //- for testing notifs
+                    NotifyTime = ExpiryDatePicker.Date
+                    //NotifyTime = DateTime.Now.AddSeconds(10) - for testing notifs
 
                 }
             };
