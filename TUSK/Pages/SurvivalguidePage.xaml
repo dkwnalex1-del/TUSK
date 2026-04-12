@@ -4,8 +4,10 @@
              x:Class="TUSK.Pages.SurvivalguidePage"
              NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout BackgroundColor="{StaticResource AppBackground}">
-        <ImageButton 
+    <ScrollView>
+
+        <VerticalStackLayout BackgroundColor="{StaticResource AppBackground}">
+            <ImageButton 
             Aspect="AspectFit" 
             Source="back_button.png"
             Clicked="OnBackClicked" 
@@ -13,7 +15,7 @@
             WidthRequest="100"
             HeightRequest="60"/>
 
-        <Label Text="SURVIVAL"
+            <Label Text="SURVIVAL"
             TextColor="#000000" 
             FontSize="24"
             FontAttributes="Bold"
@@ -21,7 +23,7 @@
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"/>
 
-        <Label Text="GUIDE"
+            <Label Text="GUIDE"
             TextColor="#000000" 
             TextDecorations="Underline"
             FontSize="24"
@@ -31,15 +33,15 @@
             HorizontalTextAlignment="Center"/>
 
 
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
           ColumnDefinitions="*"
           Padding="10"
-          RowSpacing="0"
-          ColumnSpacing="20"
+          RowSpacing="-20"
+          ColumnSpacing="10"
           HorizontalOptions="Center">
 
 
-            <ImageButton 
+                <ImageButton 
                 Grid.Row="0" Grid.Column="0"
                 Source="firstaidguide_button.png"
                 Clicked="OnFirstAidClicked"
@@ -49,7 +51,7 @@
                 Scale="0.5"
                 Margin="0,-20"/>
 
-            <ImageButton 
+                <ImageButton 
                 Grid.Row="1" Grid.Column="0"
                 Source="shelterguide_button.png"
                 Clicked="OnShelterClicked"
@@ -59,7 +61,7 @@
                 Scale="0.5"
                 Margin="0,-20"/>
 
-            <ImageButton
+                <ImageButton
                 Grid.Row="2" Grid.Column="0"
                 Source="waterguide_button.png"
                 VerticalOptions="Center" 
@@ -69,7 +71,7 @@
                 Scale="0.5"
                 Margin="0,-20"/>
 
-            <ImageButton
+                <ImageButton
                 Grid.Row="3" Grid.Column="0"
                 Source="fireguide_button.png"
                 VerticalOptions="Center" 
@@ -79,6 +81,8 @@
                 Scale="0.5"
                 Margin="0,-20"/>
 
-        </Grid>
-  </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

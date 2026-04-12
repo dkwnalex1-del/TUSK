@@ -16,6 +16,8 @@ public partial class WaterPage : ContentPage
         await Navigation.PopToRootAsync();
     }
 
+
+    //content 
     private async void ToggleSection1(object sender, EventArgs e)
     {
         Section1Content.IsVisible = !Section1Content.IsVisible;
@@ -54,5 +56,28 @@ public partial class WaterPage : ContentPage
             await Arrow4.RotateTo(180);
         else
             await Arrow4.RotateTo(0);
+    }
+
+
+    //video
+
+    private async void OnWaterVideo1Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=DScDU_WgUbI");
+    }
+
+    private async void OnWaterVideo2Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=zppUfthVw6o");
+    }
+
+    private async void OnWaterVideo3Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=CVULQxujrAk");
+    }
+
+    private async void OnWaterVideo4Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=oX7Jls_1hso");
     }
 }

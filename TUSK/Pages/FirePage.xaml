@@ -50,7 +50,7 @@
           BackgroundColor="{StaticResource AppBackground}"
           HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                    <Label Text="Starting a fire 🔥"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -68,10 +68,18 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Gather materials before lighting anything - easy fire starters are things that typically are dry but contain high calories. i.e a single dorito chip, a pinecone" TextColor="Black"/>
+                <Label Text="• Use safe, contained areas like metal containers, grills, or fire pits. - remember, keep visibility of the fire low. " TextColor="Black"/>
+                <Label Text="• Small broken furniture or wooden debris can be used as kindling " TextColor="Black"/>
+                <Label Text="• Fires started indoors must have proper ventilation. If there isn't any ventilation, do NOT start a fire." TextColor="Black"/>
+                <Label Text="• Lighters, matches, batteries with tin foil are great fire starters." TextColor="Black"/>
+                <Label Text="• Keep the fire small and controlled " TextColor="Black"/>
+                    
+                <!-- open a link because youtube does not allow embed for some videos-->
+                <Button Text="Watch a tutorial"
+                        Clicked="OnWatchFireVideoClicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -82,7 +90,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+               <Label Text="Choosing Fuel 🛢️"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -101,10 +109,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Use dry, untreated wood such as furniture or pallets" TextColor="Black"/>
+                <Label Text="• Avoid painted or treated wood - toxic fumes may get released when burning " TextColor="Black"/>
+                <Label Text="• Cardboard burns fast but does not last long" TextColor="Black"/>
+                <Label Text="• Fabric can be used to start fires but creates a lot of smoke" TextColor="Black"/>
+                <Label Text="• Gather enough fuel before you start a fire - typically equivalent to 8 bundles of firewood to fuel a fire for 8 hours." TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnFireVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -115,7 +130,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+              <Label Text="Fire Safety ⚠️"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -134,10 +149,16 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Keep the fire away from any city gas pipelines, vehicles and chemicals" TextColor="Black"/>
+                <Label Text="• Keep a fair distance away(5 to 10 meters) away from buildings and flammable materials" TextColor="Black"/>
+                <Label Text="• Always keep an extinguishing material nearby, i.e fire retardant materials or blanket" TextColor="Black"/>
+                <Label Text="• Never leave the fire unattended" TextColor="Black"/>
+                <Label Text="• Ensure there is good airflow if indoors" TextColor="Black"/>
+                
+                    <Button Text="Watch a tutorial"
+                    Clicked="OnFireVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
@@ -146,7 +167,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Maintaining Fire 👍"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -165,10 +186,18 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Add fuel slowly to avoid smothering the fire " TextColor="Black"/>
+                <Label Text="• Leave gaps between the fuel added to allow airflow" TextColor="Black"/>
+                <Label Text="• Rearrange the fuel if the fire weakens" TextColor="Black"/>
+                <Label Text="• Monitor smoke coming out" TextColor="Black"/>
+                <Label Text="• Burning the fire extra hot reduces smoke" TextColor="Black"/>
+                <Label Text="• Fully extinguish the fire when done" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnFireVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 

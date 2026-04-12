@@ -55,4 +55,24 @@ public partial class ShelterPage : ContentPage
         else
             await Arrow4.RotateTo(0);
     }
+
+    private async void OnShelterVideo1Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://youtu.be/la_rP5E-avM?si=mGDsnlOb1u1HP695&t=26");
+    }
+
+    private async void OnShelterVideo2Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=4eNk2FfWsNE");
+    }
+
+    private async void OnShelterVideo3Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=apsHVSZsk44");
+    }
+    private async void OnShelterVideo4Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=QslIqZAl_Ok");
+    }
+
 }

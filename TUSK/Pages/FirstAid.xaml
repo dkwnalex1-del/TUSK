@@ -72,10 +72,18 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Apply firm pressure using cloth, bandages, or hands" TextColor="Black"/>
+                <Label Text="• Elevate the wound if possible to reduce blood flow to the injury" TextColor="Black"/>
+                <Label Text="• Use clean material to cover the wound" TextColor="Black"/>
+                <Label Text="• If bleeding doesn't stop, apply more pressure" TextColor="Black"/>
+                <Label Text="• Tie a tight band above the wound only if bleeding is severe" TextColor="Black"/>
+                
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnFirstAidVideo1Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -86,7 +94,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Burns"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -105,10 +113,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                    <Label Text="• Cool the burn immediately with clean water for 10 to 20 minutes" TextColor="Black"/>
+                    <Label Text="• Do not apply ice directly" TextColor="Black"/>
+                    <Label Text="• Cover burn loosely with clean cloth or dressing" TextColor="Black"/>
+                    <Label Text="• If there are blisters do NOT pop them." TextColor="Black"/>
+                    <Label Text="• Keep area clean to prevent infections" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnFirstAidVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -119,7 +134,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="CPR or Unconscious Person"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -138,10 +153,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                    <Label Text="• Check if the person is breathing" TextColor="Black"/>
+                    <Label Text="• If not, start chest compressions immediately" TextColor="Black"/>
+                    <Label Text="• Push hard and fast in the center of the chest" TextColor="Black"/>
+                    <Label Text="• Keep a steady rhythm of about 100 to 120 compressions a minute" TextColor="Black"/>
+                    <Label Text="• Continue until the start breathing or additional help arrives" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnFirstAidVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
@@ -150,7 +172,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Shock"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -169,10 +191,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                    <Label Text="• Lay the person flat and keep them still" TextColor="Black"/>
+                    <Label Text="• Raise legs slightly if no injuries are present" TextColor="Black"/>
+                    <Label Text="• Keep them warm using clothing or blankets" TextColor="Black"/>
+                    <Label Text="• Give small sips of water if they are conscious" TextColor="Black"/>
+                    <Label Text="• Stay calm and monitor breathing" TextColor="Black"/>
+                
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnFirstAidVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 

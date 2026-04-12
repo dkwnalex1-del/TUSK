@@ -51,7 +51,7 @@
           BackgroundColor="{StaticResource AppBackground}"
           HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Finding water in an urban environment 💧"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -69,10 +69,18 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                    <Label Text="• Look for bottled water in homes, stores and or vending machines.  " TextColor="Black"/>
+                    <Label Text="• Check kitchens, toilets(tank water) and water heaters" TextColor="Black"/>
+                    <Label Text="• Collect rainwater using anything that can hold water" TextColor="Black"/>
+                    <Label Text="• Do NOT drink from puddles on the streets, drains or flood water" TextColor="Black"/>
+                    <Label Text="• Follow signs of moisture(plants, condensation and pipes)" TextColor="Black"/>
+                    <Label Text="• If you have even the slightest doubt that the water isn't safe to drink it likely isn't safe." TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                    Clicked="OnWaterVideo1Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -83,7 +91,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Water Treatment 🧪"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -102,10 +110,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Water must be brought to a rolling boil for at least 1 minute to kill all bacteria" TextColor="Black"/>
+                <Label Text="• Purification tablets can be used if available" TextColor="Black"/>
+                <Label Text="• Create a multi stage water filtration system, using gravel, sand and rocks with a cloth." TextColor="Black"/>
+                <Label Text="• Do NOT drink untreated water unless absolutely necessary" TextColor="Black"/>
+                <Label Text="• If you do not have tools, let the water settle before using it(preferably NOT drinking it)" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnWaterVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -116,7 +131,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+              <Label Text="Storing Water 🧴"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -135,10 +150,16 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Use clean bottles, containers or tanks " TextColor="Black"/>
+                <Label Text="• Keep containers sealed to prevent contamination" TextColor="Black"/>
+                <Label Text="• Store water in cool,shaded areas" TextColor="Black"/>
+                <Label Text="• Separate clean and dirty water with clear labels" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+    Clicked="OnWaterVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
@@ -147,7 +168,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                    <Label Text="Hydration and Rationing🚰"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -166,10 +187,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Drink small amounts regularly instead of regularly instead of all at once" TextColor="Black"/>
+                <Label Text="• Avoid heavy activity to conserve water - reduce physical activity" TextColor="Black"/>
+                <Label Text="• Ration the water - limit yourself to specific amounts a day , about 1 liter" TextColor="Black"/>
+                <Label Text="• Keep a look out for dehydration signs - typically dry mouth, and dizziness" TextColor="Black"/>
+                <Label Text="• Priority is keeping hydrated, only use water for other activities is absolutely necessary" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnWaterVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 

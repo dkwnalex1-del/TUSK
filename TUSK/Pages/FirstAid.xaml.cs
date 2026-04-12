@@ -55,4 +55,25 @@ public partial class FirstAid : ContentPage
             await Arrow4.RotateTo(0);
     }
 
+    private async void OnFirstAidVideo1Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=NxO5LvgqZe0");
+    }
+
+    private async void OnFirstAidVideo2Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=JwlSXhSg69A");
+    }
+
+    private async void OnFirstAidVideo3Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=O9T25SMyz3A");
+    }
+
+    private async void OnFirstAidVideo4Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=61urGQrmeNM");
+    }
+
+
 }

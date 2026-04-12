@@ -15,6 +15,8 @@ public partial class FirePage : ContentPage
         await Navigation.PopToRootAsync();
     }
 
+
+    //content
     private async void ToggleSection1(object sender, EventArgs e)
     {
         Section1Content.IsVisible = !Section1Content.IsVisible;
@@ -54,4 +56,27 @@ public partial class FirePage : ContentPage
         else
             await Arrow4.RotateTo(0);
     }
+
+    //Videos
+    private async void OnWatchFireVideoClicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=0O3Bj8JFcTc");
+    }
+
+    private async void OnFireVideo2Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=X3-Tpf1KPSs");
+    }
+
+    private async void OnFireVideo3Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=ZPr-a8kht2E");
+    }
+
+    private async void OnFireVideo4Clicked(object sender, EventArgs e)
+    {
+        await Launcher.OpenAsync("https://www.youtube.com/watch?v=ZPr-a8kht2E");
+    }
+
+
 }

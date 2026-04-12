@@ -45,17 +45,18 @@
 
             <!-- start of content section1-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-          ColumnDefinitions="Auto,Auto,10"
+          ColumnDefinitions="Auto,*,10"
           ColumnSpacing="20"
           BackgroundColor="{StaticResource AppBackground}"
           HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                    <Label Text="Finding Shelter 🏠"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="0"
-               FontSize="Medium"/>
+               FontSize="Medium"
+               LineBreakMode="WordWrap"/>
 
                 <Image x:Name="Arrow1"
                Source="arrow.png"
@@ -68,10 +69,18 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section1Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Use existing structures like buildings, garages, or abandoned houses. These are typical hotspots for survivors" TextColor="Black"/>
+                <Label Text="• Choose locations far away from any visibly damaged structures." TextColor="Black"/>
+                <Label Text="• Avoid low elevation areas." TextColor="Black"/>
+                <Label Text="• Stay near resources, like water sources and supplies" TextColor="Black"/>
+                <Label Text="• An enclosed space is ideal, reducing the effect of the elements" TextColor="Black"/>
+                
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                         Clicked="OnShelterVideo1Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -82,7 +91,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                <Label Text="Building Shelter 🛠️"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -101,10 +110,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section2Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Use materials like wood, metal sheets or large chunks of debris" TextColor="Black"/>
+                <Label Text="• Reinforce walls with furniture or heavy objects. Your enemy isn't just the elements, its other survivors too." TextColor="Black"/>
+                <Label Text="• Block windows with boards, reduce visibility from outside as much as humanly possible" TextColor="Black"/>
+                <Label Text="• Make the place look empty but comfortable enough to live in" TextColor="Black"/>
+                <Label Text="• Use tarps, plastics, or blankets to seal gaps" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnShelterVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 
@@ -115,7 +131,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                    <Label Text="Weather Protection 🌧️"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -134,10 +150,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section3Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="• Stay dry to prevent illness" TextColor="Black"/>
+                <Label Text="• Insulate floors using cardboard, cloth or debris" TextColor="Black"/>
+                <Label Text="• Block wind using walls, barriers or positioning" TextColor="Black"/>
+                <Label Text="• Layer materials to retain heat" TextColor="Black"/>
+                <Label Text="• Keep shelter small to conserve warmth" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnShelterVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
@@ -146,7 +169,7 @@
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
 
-                <Label Text="Cuts and Bleeding"
+                    <Label Text="Shelter Safety ⚠️"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
@@ -165,10 +188,17 @@
                 </Grid.GestureRecognizers>
             </Grid>
 
-            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center">
-                <Label Text="• Apply pressure" TextColor="Black"/>
-                <Label Text="• Elevate wound" TextColor="Black"/>
-            </VerticalStackLayout>
+            <VerticalStackLayout x:Name="Section4Content" IsVisible="False" BackgroundColor="White" HorizontalOptions="Center" Spacing="15">
+                <Label Text="•Check for structural damage before entering any buildings " TextColor="Black"/>
+                <Label Text="• Avoid areas with fire, gas leaks, or unstable walls" TextColor="Black"/>
+                <Label Text="• Watch for broken glass, sharp objects, or hazards" TextColor="Black"/>
+                <Label Text="• Ensure ventilation to avoid smoke buildup" TextColor="Black"/>
+                <Label Text="• Keep exits clear in case of emergency" TextColor="Black"/>
+
+                    <!-- open a link because youtube does not allow embed for some videos-->
+                    <Button Text="Watch a tutorial"
+                        Clicked="OnShelterVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                </VerticalStackLayout>
 
 
 

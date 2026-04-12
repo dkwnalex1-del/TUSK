@@ -84,8 +84,7 @@
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid ColumnDefinitions="Auto,Auto,10" Padding="5"
-                          HorizontalOptions="Start" >
+                    <Grid ColumnDefinitions="*,Auto" Padding="5" >
 
                         <Label Text="{Binding .}"
                             TextColor="Black"
@@ -97,7 +96,7 @@
                             Source="removeitem_button.png"
                             Grid.Column="1"
                             Clicked="DeleteItem_Clicked"
-                            WidthRequest="1"
+                            WidthRequest="0"
                             HeightRequest="1"
                             Scale="0.5"
                             Aspect="AspectFit"
