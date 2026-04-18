@@ -30,9 +30,13 @@ public partial class CompassPage : ContentPage
         if (Compass.IsMonitoring) { 
             Compass.ReadingChanged -= Compass_ReadingChanged; 
             Compass.Stop(); 
-        } 
+
+        }
+        #if ANDROID
+                Platform.CurrentActivity.RequestedOrientation = Android.Content.PM.ScreenOrientation.Unspecified;
+        #endif
     }
-    
+
     private void Compass_ReadingChanged(object sender, CompassChangedEventArgs e)
     {
         var data = e.Reading; MainThread.BeginInvokeOnMainThread(() =>
@@ -56,5 +60,14 @@ public partial class CompassPage : ContentPage
     private async void OnBackClicked(object sender, EventArgs e) { 
         await Navigation.PopAsync(); 
         }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        #if ANDROID
+                Platform.CurrentActivity.RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait;
+        #endif
+    }
 
 }

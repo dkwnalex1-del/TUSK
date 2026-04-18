@@ -24,7 +24,7 @@
                 Aspect="AspectFit" 
                 Source="home_button.png" 
                 HorizontalOptions="Start" 
-                MinimumWidthRequest="100"
+                WidthRequest="100"
                 HeightRequest="60"
                 Clicked="OnHomeClicked"
                 Grid.Column="2"/>
@@ -49,7 +49,7 @@
 
             <!-- start of content section1-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-          ColumnDefinitions="Auto,Auto,10"
+          ColumnDefinitions="Auto,*"
           ColumnSpacing="20"
           BackgroundColor="{StaticResource AppBackground}"
           HorizontalOptions="Center">
@@ -59,7 +59,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="0"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow1"
                Source="arrow.png"
@@ -92,14 +94,14 @@
 
                     <!-- open a link because youtube does not allow embed for some videos-->
                     <Button Text="Watch a tutorial"
-    Clicked="OnFirstAidVideo1Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                    Clicked="OnFirstAidVideo1Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
                 </VerticalStackLayout>
 
 
 
             <!-- start of content section2-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -109,7 +111,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow2"
                Source="arrow.png"
@@ -142,14 +146,14 @@
 
                     <!-- open a link because youtube does not allow embed for some videos-->
                     <Button Text="Watch a tutorial"
-    Clicked="OnFirstAidVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                        Clicked="OnFirstAidVideo2Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
                 </VerticalStackLayout>
 
 
 
             <!-- start of content section 3-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -159,7 +163,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow3"
                Source="arrow.png"
@@ -193,12 +199,12 @@
 
                     <!-- open a link because youtube does not allow embed for some videos-->
                     <Button Text="Watch a tutorial"
-    Clicked="OnFirstAidVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                        Clicked="OnFirstAidVideo3Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
                 </VerticalStackLayout>
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -208,7 +214,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow4"
                Source="arrow.png"
@@ -241,7 +249,7 @@
 
                     <!-- open a link because youtube does not allow embed for some videos-->
                     <Button Text="Watch a tutorial"
-    Clicked="OnFirstAidVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
+                        Clicked="OnFirstAidVideo4Clicked" BackgroundColor="{StaticResource AppBackground}" BorderColor="Black" BorderWidth="1.2" CornerRadius="0"/>
                 </VerticalStackLayout>
 
 

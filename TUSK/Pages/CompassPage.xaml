@@ -22,8 +22,8 @@
         <Grid 
             HorizontalOptions="Center" 
             VerticalOptions="Center"
-            MaximumWidthRequest="500"
-            MaximumHeightRequest="500">
+            MaximumWidthRequest="350"
+            MaximumHeightRequest="350">
 
             <!-- Rotating dial -->
             <Image 

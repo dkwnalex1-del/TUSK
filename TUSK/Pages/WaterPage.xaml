@@ -25,7 +25,7 @@
                 Aspect="AspectFit" 
                 Source="home_button.png" 
                 HorizontalOptions="Start" 
-                MinimumWidthRequest="100"
+                WidthRequest="100"
                 HeightRequest="60"
                 Clicked="OnHomeClicked"
                 Grid.Column="2"/>
@@ -46,17 +46,19 @@
 
             <!-- start of content section1-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-          ColumnDefinitions="Auto,Auto,10"
+          ColumnDefinitions="Auto,*"
           ColumnSpacing="20"
           BackgroundColor="{StaticResource AppBackground}"
           HorizontalOptions="Center">
 
-                <Label Text="Finding water in an urban environment 💧"
+                <Label Text="Finding water in urban environments 💧"
                VerticalOptions="Center"
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="0"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow1"
                Source="arrow.png"
@@ -96,7 +98,7 @@
 
             <!-- start of content section2-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -106,7 +108,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow2"
                Source="arrow.png"
@@ -146,7 +150,7 @@
 
             <!-- start of content section 3-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -156,7 +160,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                     LineBreakMode="WordWrap"
+                     HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow3"
                Source="arrow.png"
@@ -193,7 +199,7 @@
 
             <!-- start of content section 4-->
             <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-              ColumnDefinitions="Auto,Auto,10"
+              ColumnDefinitions="Auto,*"
               ColumnSpacing="20"
               BackgroundColor="{StaticResource AppBackground}"
               HorizontalOptions="Center">
@@ -203,7 +209,9 @@
                TextColor="Black"
                Grid.Column="1"
                Grid.Row="1"
-               FontSize="Medium"/>
+               FontSize="Medium"
+                           LineBreakMode="WordWrap"
+                           HorizontalOptions="Fill"/>
 
                 <Image x:Name="Arrow4"
                Source="arrow.png"
