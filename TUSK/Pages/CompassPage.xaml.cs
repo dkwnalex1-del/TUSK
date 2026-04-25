@@ -61,6 +61,7 @@ public partial class CompassPage : ContentPage
         await Navigation.PopAsync(); 
         }
 
+    //function that locks the screen orientation to portrait when the page is open, only applies to android as iOS does not allow programmatic control of screen orientation
     protected override void OnAppearing()
     {
         base.OnAppearing();

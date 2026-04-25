@@ -91,6 +91,8 @@ public partial class FoodListPage : ContentPage
             notificationId = Preferences.Get("NotifIdCounter", 0) + 1;
             Preferences.Set("NotifIdCounter", notificationId);
 
+
+            //makes a new notification request with the food name and expiry date, and sets the notification to trigger at the expiry date has code for testing purposes its set to trigger after 10 seconds
             var request = new NotificationRequest
             {
                 NotificationId = notificationId,
@@ -98,8 +100,8 @@ public partial class FoodListPage : ContentPage
                 Description = $"{food} expires today!",
                 Schedule = new NotificationRequestSchedule
                 {
-                    //NotifyTime = ExpiryDatePicker.Date
-                    NotifyTime = DateTime.Now.AddSeconds(10) // - for testing notifs
+                    NotifyTime = ExpiryDatePicker.Date
+                    
 
                 }
             };
@@ -149,6 +151,7 @@ public partial class FoodListPage : ContentPage
 
         if (fullItem != null)
         {
+            //split the item into parts to get the notification id and cancel the notification if it exists
             var parts = fullItem.Split('|');
 
             if (parts.Length > 2 && int.TryParse(parts[2], out int notificationId) && notificationId > 0)
@@ -158,6 +161,7 @@ public partial class FoodListPage : ContentPage
 
             items.Remove(fullItem);
 
+            //sets preferences to the new list of items after deletion, combines all the data entered into a single string separated by ;
             Preferences.Set("ChecklistData", string.Join(";", items));
 
             RefreshList();
